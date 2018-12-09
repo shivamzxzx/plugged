@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.flamboyant.plugged.Chat.ChatActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_img">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/cardview_dark_background">
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/my_toolbar"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/medialist14"
+            android:scrollbars="horizontal"
+
+            >
+
+        </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_weight="0.8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/message">
+
+            </EditText>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:id="@+id/media"
+                android:drawableEnd="@android:drawable/ic_menu_gallery"
+                android:drawableRight="@android:drawable/ic_menu_gallery" />
+            <Button
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@android:drawable/ic_menu_send"
+                android:id="@+id/send"
+                android:drawableRight="@android:drawable/ic_menu_send" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/my_toolbar"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

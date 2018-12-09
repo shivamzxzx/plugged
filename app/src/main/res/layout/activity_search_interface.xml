@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.flamboyant.plugged.main.SearchInterface"
+    android:orientation="horizontal"
+
+    >
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_img">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            />
+
+        <Button
+            android:id="@+id/searchbutton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="13dp"
+            android:background="@android:drawable/ic_menu_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.219" />
+
+        <EditText
+            android:id="@+id/inputtext"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_alignBottom="@+id/searchbutton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:hint="Search Youtube"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.077" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputtext"
+            android:text="Popular Feeds"
+            android:textColor="@color/cardview_dark_background"
+
+            android:id="@+id/Popular"
+            android:layout_marginTop="10sp"/>
+
+            <!--  recycler view to show the list of youtube videos -->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Popular_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/Popular"
+                android:padding="10dp"
+                />
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

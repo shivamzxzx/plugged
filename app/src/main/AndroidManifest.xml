@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.flamboyant.plugged">
+
+    <!-- internet permission required for loading videos and playing them -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="Plugged"
+        android:roundIcon="@mipmap/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        >
+        <activity
+            android:name=".main.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".main.YoutubePlayerActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".main.SearchInterface" />
+        <activity android:name=".main.LoginRegistrationActivity">
+
+        </activity>
+        <activity android:name=".main.LoginActivity" />
+        <activity android:name=".main.SignupActivity" />
+        <activity android:name=".main.MatchActivity" />
+        <activity android:name=".main.Settings" />
+        <activity
+            android:name=".Chat.ChatActivity"
+            />
+        <activity android:name=".main.MatchPageActivity" />
+        <activity android:name=".main.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

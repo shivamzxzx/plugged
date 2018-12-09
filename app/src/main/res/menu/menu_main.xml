@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".main.SearchInterface">
+
+
+    <item
+        android:id="@+id/matchpage"
+        android:title="Matches"
+        android:visible="true"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/profilesetting"
+        android:title="Edit Profile"
+        android:visible="true"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_logout"
+        android:title="Logout"
+        android:visible="true"
+        app:showAsAction="never" />
+
+</menu>

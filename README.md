@@ -30,7 +30,7 @@ Clone the repository and open it in android studio.
 
 * **Shivam Singh** 
 
-## Acknowledgments
+## References
 
 * SIMCODER - https://www.youtube.com/watch?v=lMhkxJIDv44&t=2s
 * https://developers.google.com/youtube/v3/getting-started
